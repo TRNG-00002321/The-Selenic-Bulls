@@ -1,0 +1,22 @@
+services:
+    employee: 
+      build: ./expense_apps/employee 
+      #build from dockerfile in employee
+      ports:
+        - "5000:5000"
+      container_name: employee_app
+      volumes:
+        - expense_db
+
+    manager:
+      build: ./expense_apps/manager
+      ports:
+        - "5001:5001"
+      container_name: manager_app
+      volumes:
+        - expense_db
+
+
+volumes:
+  expense_db:/expense_apps
+
