@@ -1,25 +1,10 @@
-# Application properties
-expense_apps/manager/src/main/resources/*.properties
-expense_apps/manager/test/classes/*.properties
-
-# Build directories
-expense_apps/manager/target
-expense_apps/employee/target
-
-# IntelliJ IDEA files
-.idea/
-**/.idea/
-*.iml
-
-# Database files
-*.db
-**/test.db
-expense_apps/employee/expense_manager.db
-expense_apps/manager/src/test/resources/test.db
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Local caches
-**/__pycache__
+.venv/
+myenv/
+DatabaseConnection.java
+target/
+.pytest_cache/
+allure-results/
+allure-report/
+**/.DS_Store
+htmlcov/
+__pycache__/
